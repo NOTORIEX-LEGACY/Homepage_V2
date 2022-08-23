@@ -1,0 +1,86 @@
+
+header img{
+    width: 85px;
+    height: 40px;
+}
+
+.wallpaper-middle-screen{
+    text-align: center;
+    background-image: url('../site-images-icons/center-wallpaper.jpg');
+    width: 1920px;
+    height: 1080px;
+    background-repeat: no-repeat;
+    /* object-fit: cover; */
+}
+
+.content-header{
+    background-color: rgb(58, 58, 58);
+    color: white;
+    padding: 23px 0 10px 0;
+}
+
+.content-header h1, .content-header h3, .content p, .content p small{
+    margin: auto;
+    max-width: 60%;
+    /* padding: 10px; */
+}
+
+.content-header h1{
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    padding: 10px 0 10px 0;
+}
+
+.content-header h3{
+    border-bottom: 2px solid white;
+    padding: 20px 0 30px 0;
+}
+
+.content {
+    padding: 20px 0 15px 0;
+}
+
+.content p{
+    text-align: justify;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content p small{
+    font-size: 20px;
+    text-align: left;
+}
+
+.content p a{
+    color: black;
+}
+
+footer{
+    background-color: rgb(58, 58, 58);
+    color: white;
+    padding: 23px 0 10px 0;
+}
+
+footer h1{
+    text-align: center;
+    font-size: 25px;
+}
+
+@media (min-width: 768px){
+    header {
+        background-color: white;
+        margin-bottom: 100px;
+    }
+
+    header nav ul{
+        display: grid;
+        grid-template-columns: repeat(5, 120px);
+        padding: 0;
+        float: right;
+    }
+
+    header nav ul li{
+        list-style-type: none;
+        
+    }
+}
