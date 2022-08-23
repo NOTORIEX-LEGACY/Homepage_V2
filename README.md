@@ -1,4 +1,4 @@
-# ${REPO_NAME}
+# Homepage_V2
 <h2>PLEASE READ LICENSE.md!</h2>
 
-${Description}
+Remake of the Homepage!
