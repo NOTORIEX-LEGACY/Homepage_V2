@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Artegra';
+    src: url('../fonts/FontsFree-Net-Artegra-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Alilato';
+    src: url('../fonts/Alilato-ExtraLight.ttf');
+}
 
 header img{
     width: 85px;
@@ -7,10 +16,13 @@ header img{
 .wallpaper-middle-screen{
     text-align: center;
     background-image: url('../site-images-icons/center-wallpaper.jpg');
-    width: 1920px;
-    height: 1080px;
+    /* width: 1920px;
+    height: 1080px; */
+    width: 100%;
+    height: 100vh;
     background-repeat: no-repeat;
     /* object-fit: cover; */
+    margin-top: -25px;
 }
 
 .content-header{
@@ -29,11 +41,14 @@ header img{
     border-top: 4px solid black;
     border-bottom: 4px solid black;
     padding: 10px 0 10px 0;
+    font-family: 'Artegra';
+    font-weight: bold;
 }
 
 .content-header h3{
     border-bottom: 2px solid white;
     padding: 20px 0 30px 0;
+    font-family: 'Alilato';
 }
 
 .content {
@@ -44,6 +59,7 @@ header img{
     text-align: justify;
     font-size: 30px;
     font-weight: bold;
+    font-family: 'Alilato';
 }
 
 .content p small{
@@ -66,10 +82,22 @@ footer h1{
     font-size: 25px;
 }
 
+.wallpaper-middle-screen p:first-of-type{
+    font-family: 'Alilato';
+    font-size: 40px;
+}
+
+.wallpaper-middle-screen p:nth-of-type(2){
+    font-family: 'Artegra';
+    font-weight: bold;
+    font-size: 80px;
+}
+
 @media (min-width: 768px){
     header {
         background-color: white;
-        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     header nav ul{
@@ -77,10 +105,43 @@ footer h1{
         grid-template-columns: repeat(5, 120px);
         padding: 0;
         float: right;
+        text-align: center;
     }
 
     header nav ul li{
         list-style-type: none;
         
+    }
+
+    header nav a{
+        padding-bottom: 15px;
+        color: black;
+        text-decoration: none;
+    }
+
+    header nav a:hover {
+        /* animation-name: hover-effect;
+        animation-fill-mode: forwards;
+        animation-duration: 1s; */
+        border-bottom: 5px solid black;
+    }
+
+    /* @keyframes hover-effect{
+        0%{
+            position: relative;
+            border-bottom: 5px solid black;
+            right: 0%;
+            left: 100%;
+        }
+        100%{
+            position: relative;
+            border-bottom: 5px solid black;
+            left: 0%;
+            right: 100%;
+        }
+    } */
+
+    header nav a:active{
+        border-bottom: 1px solid black;
     }
 }
